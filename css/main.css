@@ -1260,7 +1260,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff595c;
+  background: #0ec16b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2049,7 +2049,7 @@ pre .javascript .function {
   background: #f55;
 }
 #qr {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 #qr a {
   border: 0;
