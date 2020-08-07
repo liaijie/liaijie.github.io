@@ -173,7 +173,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-07 16:56:05 / 修改时间：17:48:59" itemprop="dateCreated datePublished" datetime="2020-08-07T16:56:05+08:00">2020-08-07</time>
+              <time title="创建时间：2020-08-07 16:56:05 / 修改时间：17:52:11" itemprop="dateCreated datePublished" datetime="2020-08-07T16:56:05+08:00">2020-08-07</time>
             </span>
 
           <br>
@@ -182,7 +182,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>960</span>
+              <span>999</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -205,32 +205,14 @@
 <li><code>\.deploy_git</code></li>
 </ul>
 <p><code>deploy</code>意为部署，所以这个目录下的文件就是最后部署到<code>github</code>的文件，里面包含生成的<code>html</code>页面，以及样式、图片、js等，在执行<code>hexo d</code>会将<code>public</code>中的文件同步到这个文件夹，然后<code>.deploy_git</code>内的文件会被上传到<code>git</code>的<code>master</code>分支下，这都是在<code>hexo</code>配置文件下的<code>deploy</code>中配置好的</p>
-<ul>
-<li><code>\source</code></li>
-</ul>
-<p>这个文件夹下的<code>_posts</code>存放的是我们博客源文件，格式为<code>.md</code>,在执行<code>hexo new 我的博客</code>后就会在这个目录下生成<code>我的博客.md</code></p>
-<p>这里以<code>next</code>主题为例：</p>
-<ul>
-<li><code>\public</code></li>
-</ul>
-<p>这是缓存目录，执行<code>hexo g</code>后会生成，<code>hexo server</code>启动本地预览就是使用的这里面的文件，</p>
-<ul>
-<li><code>\themes\next\languages\zh-CN.yml</code></li>
-</ul>
-<p>这里面可以设置页面上所有固定文本，比如<code>首页</code>、<code>归档</code>、<code>分类</code>等，你可以自己修改</p>
-<ul>
-<li><code>\themes\next\source\css</code></li>
-</ul>
-<p>这里面是主题的所有css样式，是分模块的，如果你想修改，可以通过控制台，查看类名或者<code>ID</code>,判断元素属于哪个模块，然后在这个文件夹下找到对应的模块的<code>.styl</code>文件进行样式修改</p>
-<ul>
-<li><code>\themes\next\source\images</code></li>
-</ul>
-<p>这里面存放的是页面上静态的图标图片等文件，你可以换成自己的，但是名字也要改一下，否则就会找不到</p>
-<h3 id="修改样式后本地调试可以，部署后失效"><a href="#修改样式后本地调试可以，部署后失效" class="headerlink" title="修改样式后本地调试可以，部署后失效"></a>修改样式后本地调试可以，部署后失效</h3><p>我在修改了主题样式后，本地启动服务预览没问题，但是部署到<code>github</code>后失效，我查看了<code>\.deploy_git\css\main.css</code>，因为这个样式是最后<code>hexo d</code>后生成的<code>html</code>页面引用的样式，这里没改过来，当然部署后没效果</p>
-<p>后来找到了原因，是因为我修改样式后没有使用<code>hexo clean</code>清除缓存，<code>\public</code>文件夹就是缓存文件，我执行<code>hexo g</code>后就会生成这个文件夹，<br>这个文件夹的结构目录和<code>\.deploy_git</code>文件夹是一模一样的。</p>
-<p>正确的操作是，修改完主题样式<code>.styl</code>文件后，依次执行<code>hexo clean</code>、<code>hexo g</code>、<code>hexo d</code></p>
-<h3 id="hexo-d部署博客报错"><a href="#hexo-d部署博客报错" class="headerlink" title="hexo d部署博客报错"></a>hexo d部署博客报错</h3><p>我在部署时遇到这样的问题，最后发现是<code>node</code>版本问题，因为我重装了系统，安装的是最新的版本，所以报错，我使用<code>nvm</code>实现了多版本<code>node</code>管理，安装了<code>12</code>版本的<code>node</code>,问题解决，如果想知道<code>nvm</code>的安装和使用，可以看我的博客</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/07/Hexo%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
